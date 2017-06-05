@@ -10,8 +10,6 @@ set -e
 
 python --version
 
-export PYTHONHASHSEED=2157
-
 run_tests() {
     KERAS_BACKEND=tensorflow py.test -v --cov=deep_qa --durations=20
 }
